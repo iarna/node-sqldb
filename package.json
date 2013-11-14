@@ -1,0 +1,21 @@
+{
+  "name": "sqldb",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+      "promisable": "https://github.com/iarna/promisable/tarball/master",
+      "mysql": "https://github.com/iarna/node-mysql/tarball/minimal"
+  },
+  "main": "sqldb.js",
+  "scripts": {
+    "test": "node node_modules/tape/bin/tape $(find test -name '*.js')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iarna/promisable.git"
+  },
+  "devDependencies": {
+    "tape": "~1.0.4"
+  },
+  "license": "BSD"
+}
