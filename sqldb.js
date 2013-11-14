@@ -53,9 +53,9 @@ DBH.prototype = {
         return Promisable.withCB(callback,function(R) {
             this.disconnect()
                 .then(function() {
-                    this.drh.connect(this.config)
+                    return this.drh.connect(this.config)
                 }.bind(this))
-                .then(function() {
+                .then(function(drc) {
                     this.drc = drc;
                     R.fulfill(this);
                 }.bind(this));
